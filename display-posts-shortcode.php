@@ -901,7 +901,7 @@ function dps_plugin_updates() {
 	require dirname( __FILE__ ) . '/updater/plugin-update-checker.php';
 
 	$myUpdateChecker = \YahnisElsts\PluginUpdateChecker\v5\PucFactory::buildUpdateChecker(
-		'https://github.com/billerickson/display-posts-shortcode',
+		'https://github.com/tyaty1/display-posts-shortcode',
 		__FILE__, //Full path to the main plugin file or functions.php.
 		'display-posts-shortcode'
 	);

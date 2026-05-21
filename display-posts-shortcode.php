@@ -413,7 +413,7 @@ function be_display_posts_shortcode( $atts ) {
 			$terms                = be_dps_explode( sanitize_text_field( $original_atts[ 'tax_' . $count . '_term' ] ) );
 			$tax_operator         = isset( $original_atts[ 'tax_' . $count . '_operator' ] ) ? $original_atts[ 'tax_' . $count . '_operator' ] : 'IN';
 			$tax_operator         = in_array( $tax_operator, array( 'IN', 'NOT IN', 'AND' ), true ) ? $tax_operator : 'IN';
-			$tax_include_children = isset( $original_atts[ 'tax_' . $count . '_include_children' ] ) ? filter_var( $atts[ 'tax_' . $count . '_include_children' ], FILTER_VALIDATE_BOOLEAN ) : true;
+			$tax_include_children = isset( $original_atts[ 'tax_' . $count . '_include_children' ] ) ? filter_var( $original_atts[ 'tax_' . $count . '_include_children' ], FILTER_VALIDATE_BOOLEAN ) : true;
 
 			$tax_args['tax_query'][] = array(
 				'taxonomy'         => $taxonomy,

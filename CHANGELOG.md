@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file, formatted via [this recommendation](http://keepachangelog.com/).
 
+### [3.1.2]
+#### Changed
+* Fixed a  PHP Warning issue  with Wordpress 6.9.x
+
 ### [3.1.1]
 #### Changed
 * Removed the plugin notice in the admin
